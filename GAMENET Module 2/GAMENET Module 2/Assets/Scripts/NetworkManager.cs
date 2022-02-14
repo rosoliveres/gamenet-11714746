@@ -31,10 +31,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [Header("Inside Room Panel")]
     public GameObject InsideRoomPanel;
 
+    [Header("Room List Panel")]
+    public GameObject RoomListPanel;
+    public GameObject RoomItemPrefab;
+    public GameObject RoomListParent;
+
+    private Dictionary<string, RoomInfo> cachedRoomList;        // key is the string (room name) and the value stored is the room info
+
     #region Unity Functions
     // Start is called before the first frame update
     void Start()
     {
+        cachedRoomList = new Dictionary<string, RoomInfo>();
         ActivatePanel(LoginUiPanel);
     }
 
@@ -74,6 +82,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         PhotonNetwork.CreateRoom(roomName, roomOptions);
     }
+
+    public void OnCancelButtonClicked()
+    {
+        ActivatePanel(GameOptionsPanel);
+    }
+
+    public void OnShowRoomListButtonClicked()
+    {
+        if (!PhotonNetwork.InLobby)
+            PhotonNetwork.JoinLobby();
+        ActivatePanel(ShowRoomListPanel);
+    }
     #endregion
 
     #region PUN Callbacks
@@ -98,6 +118,49 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log(PhotonNetwork.LocalPlayer.NickName + " has joined " + PhotonNetwork.CurrentRoom.Name);
         ActivatePanel(InsideRoomPanel);
     }
+
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        foreach(RoomInfo info in roomList)
+        {
+            Debug.Log(info.Name);
+
+            // Check room info first...
+            if(!info.IsOpen || !info.IsVisible || info.RemovedFromList)     // if room info is not open, not visible or removed from list (b/c it's full)
+            {
+                if(cachedRoomList.ContainsKey(info.Name))   // if dictionary already contains the info
+                {
+                    cachedRoomList.Remove(info.Name);       // remove from dictionary
+                }
+            }
+            else
+            {
+                //Update existing room info if it already exists:
+                if(cachedRoomList.ContainsKey(info.Name))
+                {
+                    cachedRoomList[info.Name] = info;
+                }
+                else
+                {
+                    cachedRoomList.Add(info.Name, info);
+                }
+            }
+        }
+
+        // Cached room list should now have updated room list
+        foreach(RoomInfo info in cachedRoomList.Values)
+        {
+            GameObject listItem = Instantiate(RoomItemPrefab);          // instantiates list item prefab
+            listItem.transform.SetParent(RoomListParent.transform);     // sets it as a child of the list parent
+            listItem.transform.localScale = Vector3.one;                // ensures no scaling issues
+            listItem.transform.Find("RoomNameText").GetComponent<Text>().text = info.Name;      // set room name text
+            listItem.transform.Find("RoomPlayersText").GetComponent<Text>().text = "Player count: " + info.PlayerCount + "/" + info.MaxPlayers;
+        }
+    }
+    #endregion
+
+    #region Private Methods
+
     #endregion
 
     #region Public Methods
@@ -110,6 +173,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         JoinRandomRoomPanel.gameObject.SetActive(panelToBeActivated.Equals(JoinRandomRoomPanel));
         ShowRoomListPanel.gameObject.SetActive(panelToBeActivated.Equals(ShowRoomListPanel));
         InsideRoomPanel.gameObject.SetActive(panelToBeActivated.Equals(InsideRoomPanel));
+        RoomListPanel.gameObject.SetActive(panelToBeActivated.Equals(RoomListPanel));
     }
     #endregion
 }
