@@ -38,6 +38,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
@@ -100,6 +101,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1782}
     - Class: 114
       Script: {instanceID: 1796}
+    - Class: 114
+      Script: {instanceID: 1810}
     - Class: 114
       Script: {instanceID: 1844}
     - Class: 114
@@ -1167,7 +1170,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 15f1129971d282bc14aa76381d152f6b
+      Hash: e36fe93ebe2485c85bd602fc4a416c95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager

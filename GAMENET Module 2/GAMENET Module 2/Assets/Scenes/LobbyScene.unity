@@ -1131,8 +1131,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 808671910}
+        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
         m_MethodName: OnLeaveGameButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -2175,9 +2175,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnJoinRandomRoomButtonClicked
+      - m_Target: {fileID: 808671910}
+        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
+        m_MethodName: OnJoinRandomRoomClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2536,9 +2536,13 @@ MonoBehaviour:
   JoinRandomRoomPanel: {fileID: 1438516555}
   ShowRoomListPanel: {fileID: 2010485768}
   InsideRoomPanel: {fileID: 1760134789}
+  RoomInfoText: {fileID: 873426530}
+  PlayerListItemPrefab: {fileID: 1252797748048109091, guid: 5dc44bfa7a0d258489acbcd2b912d338, type: 3}
+  PlayerListViewParent: {fileID: 1396198818}
+  StartGameButton: {fileID: 503160507}
   RoomListPanel: {fileID: 2010485768}
   RoomItemPrefab: {fileID: 841278376669109242, guid: 1b50ba566761f6c42bf8b3c775911a8d, type: 3}
-  RoomListParent: {fileID: 0}
+  RoomListParent: {fileID: 505941761}
 --- !u!4 &808671911
 Transform:
   m_ObjectHideFlags: 0
@@ -5312,8 +5316,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 808671910}
+        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
         m_MethodName: OnBackButtonClicked
         m_Mode: 1
         m_Arguments:

@@ -30,6 +30,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     [Header("Inside Room Panel")]
     public GameObject InsideRoomPanel;
+    public Text RoomInfoText;
+    public GameObject PlayerListItemPrefab;
+    public GameObject PlayerListViewParent;
+    public GameObject StartGameButton;
 
     [Header("Room List Panel")]
     public GameObject RoomListPanel;
@@ -37,12 +41,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject RoomListParent;
 
     private Dictionary<string, RoomInfo> cachedRoomList;        // key is the string (room name) and the value stored is the room info
+    private Dictionary<string, GameObject> roomListGameObjects;
+    private Dictionary<int, GameObject> playerListGameObjects;
 
     #region Unity Functions
     // Start is called before the first frame update
     void Start()
     {
         cachedRoomList = new Dictionary<string, RoomInfo>();
+        roomListGameObjects = new Dictionary<string, GameObject>();
         ActivatePanel(LoginUiPanel);
     }
 
@@ -94,6 +101,26 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             PhotonNetwork.JoinLobby();
         ActivatePanel(ShowRoomListPanel);
     }
+
+    public void OnBackButtonClicked()
+    {
+        if(PhotonNetwork.InLobby)
+        {
+            PhotonNetwork.LeaveLobby();
+        }
+        ActivatePanel(GameOptionsPanel);
+    }
+
+    public void OnLeaveGameButtonClicked()
+    {
+        PhotonNetwork.LeaveRoom();  // all assigned callbacks will be called (in this case, our OnLeftRoom override will be called)
+    }
+
+    public void OnJoinRandomRoomClicked()
+    {
+        ActivatePanel(JoinRandomRoomPanel);
+        PhotonNetwork.JoinRandomRoom();
+    }
     #endregion
 
     #region PUN Callbacks
@@ -117,10 +144,33 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         Debug.Log(PhotonNetwork.LocalPlayer.NickName + " has joined " + PhotonNetwork.CurrentRoom.Name);
         ActivatePanel(InsideRoomPanel);
+
+        RoomInfoText.text = $"Room name: {PhotonNetwork.CurrentRoom.Name} Current Player Count: {PhotonNetwork.CurrentRoom.PlayerCount} / {PhotonNetwork.CurrentRoom.MaxPlayers}";
+        
+        // Initialize player GO dict here
+        if(playerListGameObjects == null)
+        {
+            playerListGameObjects = new Dictionary<int, GameObject>();
+        }
+
+        // "Player" is defined by Photon
+        foreach(Player player in PhotonNetwork.PlayerList)
+        {
+            GameObject playerItem = Instantiate(PlayerListItemPrefab);
+            playerItem.transform.SetParent(PlayerListViewParent.transform);
+            playerItem.transform.localScale = Vector3.one;
+            playerItem.transform.Find("PlayerNameText").GetComponent<Text>().text = player.NickName;
+            
+            playerItem.transform.Find("PlayerIndicator").gameObject.SetActive(player.ActorNumber == PhotonNetwork.LocalPlayer.ActorNumber);
+
+            playerListGameObjects.Add(player.ActorNumber, playerItem);
+        }
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
+        ClearRoomListGameObjects();             // removes every GO and entry in the room list GO dictionary to prep for adding new ones
+        StartGameButton.SetActive(PhotonNetwork.LocalPlayer.IsMasterClient); // start button only activates if you are the host (master client)
         foreach(RoomInfo info in roomList)
         {
             Debug.Log(info.Name);
@@ -155,12 +205,90 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             listItem.transform.localScale = Vector3.one;                // ensures no scaling issues
             listItem.transform.Find("RoomNameText").GetComponent<Text>().text = info.Name;      // set room name text
             listItem.transform.Find("RoomPlayersText").GetComponent<Text>().text = "Player count: " + info.PlayerCount + "/" + info.MaxPlayers;
+            listItem.transform.Find("JoinRoomButton").GetComponent<Button>().onClick.AddListener(() => OnJoinedRoomClicked(info.Name));
+
+            roomListGameObjects.Add(info.Name, listItem);
         }
+    }
+
+    public override void OnLeftLobby()
+    {
+        ClearRoomListGameObjects();
+        cachedRoomList.Clear();
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        // Update player count on room info when player enters
+        RoomInfoText.text = $"Room name: {PhotonNetwork.CurrentRoom.Name} Current Player Count: {PhotonNetwork.CurrentRoom.PlayerCount} / {PhotonNetwork.CurrentRoom.MaxPlayers}";
+
+        // Updates player list for all players currently in the room (even the ones that entered earlier)
+        GameObject playerItem = Instantiate(PlayerListItemPrefab);
+        playerItem.transform.SetParent(PlayerListViewParent.transform);
+        playerItem.transform.localScale = Vector3.one;
+        playerItem.transform.Find("PlayerNameText").GetComponent<Text>().text = newPlayer.NickName;
+
+        playerItem.transform.Find("PlayerIndicator").gameObject.SetActive(newPlayer.ActorNumber == PhotonNetwork.LocalPlayer.ActorNumber);
+
+        playerListGameObjects.Add(newPlayer.ActorNumber, playerItem);
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        // When host leaves, Photon assigns next player as host - start button becomes active for that player
+        StartGameButton.SetActive(PhotonNetwork.LocalPlayer.IsMasterClient);
+        // Update player count when player left room
+        RoomInfoText.text = $"Room name: {PhotonNetwork.CurrentRoom.Name} Current Player Count: {PhotonNetwork.CurrentRoom.PlayerCount} / {PhotonNetwork.CurrentRoom.MaxPlayers}";
+
+        Destroy(playerListGameObjects[otherPlayer.ActorNumber]);        // destroys prefab
+        playerListGameObjects.Remove(otherPlayer.ActorNumber);          // Removes entry in dict
+    }
+
+    public override void OnLeftRoom()
+    {
+        foreach(var gameObject in playerListGameObjects.Values)
+        {
+            Destroy(gameObject);
+        }
+        playerListGameObjects.Clear();
+        playerListGameObjects = null;
+        ActivatePanel(GameOptionsPanel);
+    }
+    
+    // Gets called when we try to join a random room but there's no rooms available
+    public override void OnJoinRandomFailed(short returnCode, string message)
+    {
+        Debug.LogWarning(message);
+
+        // Create a random room
+        string roomName = "Room " + Random.Range(1000, 10000);
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.MaxPlayers = 20;
+        PhotonNetwork.CreateRoom(roomName, roomOptions);
     }
     #endregion
 
     #region Private Methods
 
+    // Since subscribing this to OnClickListener,
+    // the corresponding button in the inspector must have an empty list or no null references for On Click() for this to work
+    private void OnJoinedRoomClicked(string roomName)
+    {
+        if(PhotonNetwork.InLobby)
+        {
+            PhotonNetwork.LeaveLobby();
+        }
+        PhotonNetwork.JoinRoom(roomName);
+    }
+
+    private void ClearRoomListGameObjects()
+    {
+        foreach(var item in roomListGameObjects.Values)
+        {
+            Destroy(item);
+        }
+        roomListGameObjects.Clear();
+    }
     #endregion
 
     #region Public Methods
