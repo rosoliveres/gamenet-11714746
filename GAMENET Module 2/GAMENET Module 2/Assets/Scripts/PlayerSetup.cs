@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerSetup : MonoBehaviourPunCallbacks
 {
@@ -18,10 +19,14 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
     public Avatar FpsAvatar, NonFpsAvatar;
 
     private Shooting shooting;
+    public TextMeshProUGUI PlayerNameText;
+
+    private Unit unit;
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerNameText.text = photonView.Owner.NickName;
         PlayerMovementController = this.GetComponent<PlayerMovementController>();
         animator = this.GetComponent<Animator>();
 
@@ -50,11 +55,10 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
             GetComponent<RigidbodyFirstPersonController>().enabled = false;
             FpsCamera.enabled = false;
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        unit = this.GetComponent<Unit>();
+
+        GameManager.instance.PlayersInGame.Add(unit);
+        GameManager.instance.OnAddPlayer(shooting);
     }
 }

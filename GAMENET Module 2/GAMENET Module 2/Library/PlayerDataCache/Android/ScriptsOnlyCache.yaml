@@ -11,10 +11,12 @@ ScriptsOnlyBuild:
     - GameManager
     - GunScript
     - Health
+    - KillPopUp
     - NetworkManager
     - PlayerMovementController
     - PlayerSetup
     - Shooting
+    - Unit
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -25,8 +27,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -44,10 +44,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -114,47 +112,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1594}
-    - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1878}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2078}
+      Script: {instanceID: 1886}
     - Class: 114
-      Script: {instanceID: 2192}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2088}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2122}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2948}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 3622}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 3646}
     - Class: 114
-      Script: {instanceID: 4190}
+      Script: {instanceID: 3658}
     - Class: 114
-      Script: {instanceID: 221758}
+      Script: {instanceID: 4154}
+    - Class: 114
+      Script: {instanceID: 4192}
+    - Class: 114
+      Script: {instanceID: 4194}
+    - Class: 114
+      Script: {instanceID: 4218}
+    - Class: 114
+      Script: {instanceID: 298950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -231,99 +233,103 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1594}
-    - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1686}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1756}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1800}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1810}
+      Script: {instanceID: 1762}
     - Class: 114
-      Script: {instanceID: 1822}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 1878}
+      Script: {instanceID: 1828}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1832}
     - Class: 114
-      Script: {instanceID: 2078}
+      Script: {instanceID: 1886}
     - Class: 114
-      Script: {instanceID: 2132}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 2088}
     - Class: 114
-      Script: {instanceID: 2268}
+      Script: {instanceID: 2122}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2144}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 2866}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 2948}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3206}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3618}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 3622}
+      Script: {instanceID: 3226}
     - Class: 114
-      Script: {instanceID: 3624}
+      Script: {instanceID: 3360}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 3660}
+      Script: {instanceID: 3646}
     - Class: 114
-      Script: {instanceID: 3768}
+      Script: {instanceID: 3648}
     - Class: 114
-      Script: {instanceID: 3810}
+      Script: {instanceID: 3658}
     - Class: 114
-      Script: {instanceID: 3814}
+      Script: {instanceID: 3684}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 4108}
+      Script: {instanceID: 3834}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 3838}
     - Class: 114
-      Script: {instanceID: 4130}
+      Script: {instanceID: 3912}
     - Class: 114
       Script: {instanceID: 4134}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 4154}
     - Class: 114
-      Script: {instanceID: 4260}
+      Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4472}
+      Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 4542}
+      Script: {instanceID: 4192}
     - Class: 114
-      Script: {instanceID: 221758}
+      Script: {instanceID: 4194}
+    - Class: 114
+      Script: {instanceID: 4288}
+    - Class: 114
+      Script: {instanceID: 4502}
+    - Class: 114
+      Script: {instanceID: 4572}
+    - Class: 114
+      Script: {instanceID: 298950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -553,6 +559,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 44c2d3bd57c3d764412e06815f612aa3
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: Explosive
+  - hash:
+      serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -631,6 +643,12 @@ ScriptsOnlyBuild:
     className: CloudRegionProperty
   - hash:
       serializedVersion: 2
+      Hash: 2294ba4929e515b4b46046eff1f6b057
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ExplosionFireAndDebris
+  - hash:
+      serializedVersion: 2
       Hash: ffc46ef211ad5a2f2b076abf30486868
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -697,6 +715,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 80349e09502738955c7508a414c71d79
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Unit
+  - hash:
+      serializedVersion: 2
       Hash: 9dac16f3efc511835ac976dfae55f580
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -721,7 +745,7 @@ ScriptsOnlyBuild:
     className: SunShafts
   - hash:
       serializedVersion: 2
-      Hash: d2e890fa595d33c5b63b34cd1b1aa6b5
+      Hash: 031730c6e797ee346b5b5a3dffaf2be8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -841,6 +865,12 @@ ScriptsOnlyBuild:
     className: NamePickGui
   - hash:
       serializedVersion: 2
+      Hash: 9df954eca51e9f2b95915ae2918e4258
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: AfterburnerPhysicsForce
+  - hash:
+      serializedVersion: 2
       Hash: 80d2851602cb4bcb6f559596c5eb955b
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -863,6 +893,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CurrentRoomIsVisibleToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 0faadf7f444e033f28a19470d1ae257b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ExplosionPhysicsForce
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
@@ -931,7 +967,7 @@ ScriptsOnlyBuild:
     className: ConnectAndJoinRandom
   - hash:
       serializedVersion: 2
-      Hash: cefd3c20784f92c052d070086a31cb28
+      Hash: cc76b5d8b464343d49850f27f0e81aa3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerSetup
@@ -1091,6 +1127,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Water
     className: WaterTile
+  - hash:
+      serializedVersion: 2
+      Hash: 323ef9904ec6149348cdcc45975c0dbe
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: SmokeParticles
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1333,6 +1375,12 @@ ScriptsOnlyBuild:
     className: BlurOptimized
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: FireLight
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1507,6 +1555,12 @@ ScriptsOnlyBuild:
     className: SetRoomCustomPropertyUIForm
   - hash:
       serializedVersion: 2
+      Hash: 3748fbad2d474a315bda516b8363a0c5
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ExtinguishableParticleSystem
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Hub
@@ -1591,6 +1645,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 3748fbad2d474a315bda516b8363a0c5
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ParticleSystemMultiplier
+  - hash:
+      serializedVersion: 2
       Hash: cba6cca6bb3290c4c00d709cf63843db
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1657,7 +1717,7 @@ ScriptsOnlyBuild:
     className: Bullet
   - hash:
       serializedVersion: 2
-      Hash: a744a5cf99559662e50c8f34137d5770
+      Hash: 60f0f837c7cca6887f3aee0a4e45aa48
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shooting
@@ -1921,6 +1981,12 @@ ScriptsOnlyBuild:
     className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
+      Hash: b9048d3760274b9fd3dc94b75b3d0f96
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: WaterHoseParticles
+  - hash:
+      serializedVersion: 2
       Hash: 3ba023cd67d72cace33969ab863e0fd4
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -2015,6 +2081,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.ImageEffects
     className: TiltShift
+  - hash:
+      serializedVersion: 2
+      Hash: e493d46c9844c776c2e2ef4f0f2c5500
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Health
   - hash:
       serializedVersion: 2
       Hash: c1dd3d1aed1fdc1c22bef77c2b09f012
@@ -2191,6 +2263,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: d63aae503ada135df9e49dad6d9fb277
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: Hose
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -2257,70 +2335,10 @@ ScriptsOnlyBuild:
     className: FPSCounter
   - hash:
       serializedVersion: 2
-      Hash: 3748fbad2d474a315bda516b8363a0c5
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: ParticleSystemMultiplier
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: FireLight
-  - hash:
-      serializedVersion: 2
-      Hash: 44c2d3bd57c3d764412e06815f612aa3
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: Explosive
-  - hash:
-      serializedVersion: 2
-      Hash: 323ef9904ec6149348cdcc45975c0dbe
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: SmokeParticles
-  - hash:
-      serializedVersion: 2
-      Hash: 2294ba4929e515b4b46046eff1f6b057
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: ExplosionFireAndDebris
-  - hash:
-      serializedVersion: 2
-      Hash: b9048d3760274b9fd3dc94b75b3d0f96
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: WaterHoseParticles
-  - hash:
-      serializedVersion: 2
-      Hash: 9df954eca51e9f2b95915ae2918e4258
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: AfterburnerPhysicsForce
-  - hash:
-      serializedVersion: 2
-      Hash: 0faadf7f444e033f28a19470d1ae257b
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: ExplosionPhysicsForce
-  - hash:
-      serializedVersion: 2
-      Hash: 3748fbad2d474a315bda516b8363a0c5
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: ExtinguishableParticleSystem
-  - hash:
-      serializedVersion: 2
-      Hash: d63aae503ada135df9e49dad6d9fb277
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Effects
-    className: Hose
-  - hash:
-      serializedVersion: 2
-      Hash: e493d46c9844c776c2e2ef4f0f2c5500
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Health
+    className: KillPopUp
   platform: 13
   scenePathNames:
   - Assets/Scenes/LobbyScene.unity

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.Events;
 
 public class Shooting : MonoBehaviourPunCallbacks
 {
@@ -13,6 +14,13 @@ public class Shooting : MonoBehaviourPunCallbacks
     private float damage = 25f;
 
     private Animator animator;
+    public int KillCount { get; private set; } = 0;
+    public int MaxKills { get; private set; } = 5;
+    public GameObject KillPanelPrefab;
+    public GameObject WinPanelPrefab;
+
+    public UnityEvent<string> EvtOnWin = new UnityEvent<string>();
+    public UnityEvent<string, string> EvtOnKill = new UnityEvent<string, string>();
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +56,8 @@ public class Shooting : MonoBehaviourPunCallbacks
         if(this.Health.CurrentHealth <= 0)
         {
             Die();
+            OnKill(info.Sender.NickName, info.photonView.Owner.NickName);
+
             Debug.Log(info.Sender.NickName + " killed " + info.photonView.Owner.NickName);
         }
     }
@@ -99,5 +109,19 @@ public class Shooting : MonoBehaviourPunCallbacks
     {
         Health.CurrentHealth = Health.StartingHealth;
         Health.SetHealthBarFillAmount();
+    }
+
+    private void OnKill(string killerName, string victimName)
+    {
+        KillCount++;
+        Debug.Log(killerName + "'s kill count: " + KillCount);
+
+        // instantiate kill panel
+        EvtOnKill.Invoke(killerName, victimName);
+
+        if (KillCount >= MaxKills)
+        {
+            EvtOnWin.Invoke(killerName);
+        }
     }
 }
