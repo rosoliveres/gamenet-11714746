@@ -718,6 +718,7 @@ MonoBehaviour:
   StartingHealth: 100
   CurrentHealth: 0
   HealthBar: {fileID: 8813007506160519228}
+  IsDead: 0
 --- !u!114 &1582489609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,10 +731,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0407cdbd5ae9274f80cfcfd0773f433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitName: 
   WinPanel: {fileID: 504403590853095408}
   KillPanel: {fileID: 8025916683055138617, guid: 7ec2eedd46f014343a82b8b64708353b, type: 3}
-  KillCalls: 0
   KillPanelParent: {fileID: 5308655288325438742}
+  KillCount: 0
 --- !u!1 &1117455571831589458
 GameObject:
   m_ObjectHideFlags: 0

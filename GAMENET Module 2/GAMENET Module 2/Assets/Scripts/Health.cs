@@ -10,11 +10,17 @@ public class Health : MonoBehaviour
 
     public Image HealthBar;
 
+    public bool IsDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
         CurrentHealth = StartingHealth;
         SetHealthBarFillAmount();
+    }
+
+    private void Update()
+    {
     }
 
     public void SetHealthBarFillAmount()

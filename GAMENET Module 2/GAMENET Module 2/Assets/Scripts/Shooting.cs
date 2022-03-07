@@ -12,21 +12,25 @@ public class Shooting : MonoBehaviourPunCallbacks
 
     public Health Health;
     private float damage = 25f;
+    private bool isDead = false;
 
     private Animator animator;
     public int KillCount { get; private set; } = 0;
-    public int MaxKills { get; private set; } = 5;
+    public int MaxKills { get; private set; } = 10;
     public GameObject KillPanelPrefab;
     public GameObject WinPanelPrefab;
 
     public UnityEvent<string> EvtOnWin = new UnityEvent<string>();
     public UnityEvent<string, string> EvtOnKill = new UnityEvent<string, string>();
 
+    private Unit initiator;
+
     // Start is called before the first frame update
     void Start()
     {
         Health = this.GetComponent<Health>();
         animator = this.GetComponent<Animator>();
+        initiator = this.GetComponent<Unit>();
     }
 
     public void Fire()
@@ -43,8 +47,21 @@ public class Shooting : MonoBehaviourPunCallbacks
         // ensure we are hitting a player and not ourselves
         if(hit.collider.CompareTag("Player") && !hit.collider.gameObject.GetComponent<PhotonView>().IsMine)
         {
-            hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, damage);    // all current and future players get rpc call
+            // Victim calls the take damage fn
+            //hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, damage);    // all current and future players get rpc call
+            Attack(hit.collider.gameObject, initiator);
         }
+    }
+
+    private void Attack(GameObject target, Unit initiator)
+    {
+        Debug.Log("Initiator = " + initiator.unitName);
+        target.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, damage);
+        if(target.GetComponent<Shooting>().isDead)
+        {
+            photonView.RPC("OnKill", RpcTarget.AllBuffered, initiator.unitName, target.GetComponent<Unit>().unitName);
+        }
+        target.GetComponent<Shooting>().isDead = false;
     }
 
     [PunRPC]
@@ -56,8 +73,8 @@ public class Shooting : MonoBehaviourPunCallbacks
         if(this.Health.CurrentHealth <= 0)
         {
             Die();
-            OnKill(info.Sender.NickName, info.photonView.Owner.NickName);
-
+            //OnKill(info.Sender.NickName, info.photonView.Owner.NickName, killer);
+            isDead = true;
             Debug.Log(info.Sender.NickName + " killed " + info.photonView.Owner.NickName);
         }
     }
@@ -95,10 +112,7 @@ public class Shooting : MonoBehaviourPunCallbacks
         animator.SetBool("isDead", false);
         respawnText.GetComponent<Text>().text = "";
 
-        int randomX = Random.Range(-20, 20);
-        int randomZ = Random.Range(-20, 20);
-
-        this.transform.position = new Vector3(randomX, 0, randomZ);
+        this.transform.position = SpawnPointManager.instance.GetRandomSpawnPt();
         transform.GetComponent<PlayerMovementController>().enabled = true;
 
         photonView.RPC("ResetHealth", RpcTarget.AllBuffered);
@@ -111,15 +125,15 @@ public class Shooting : MonoBehaviourPunCallbacks
         Health.SetHealthBarFillAmount();
     }
 
+    [PunRPC]
     private void OnKill(string killerName, string victimName)
     {
-        KillCount++;
-        Debug.Log(killerName + "'s kill count: " + KillCount);
-
+        initiator.KillCount++;
+        Debug.Log("Killer: " + initiator.unitName + " kill count = " + initiator.KillCount);
         // instantiate kill panel
         EvtOnKill.Invoke(killerName, victimName);
 
-        if (KillCount >= MaxKills)
+        if (initiator.KillCount >= MaxKills)
         {
             EvtOnWin.Invoke(killerName);
         }
