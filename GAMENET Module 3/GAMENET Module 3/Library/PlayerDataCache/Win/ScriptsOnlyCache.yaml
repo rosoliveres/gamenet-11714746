@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - NetworkManager
+    - PlayerListItemInitializer
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -14,6 +15,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
+    PhotonUnityNetworking.Utilities.dll:
+    - Photon.Pun.UtilityScripts.TextButtonTransition
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -113,53 +116,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2394}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2432}
+      Script: {instanceID: 2396}
     - Class: 114
-      Script: {instanceID: 2504}
+      Script: {instanceID: 2434}
     - Class: 114
-      Script: {instanceID: 2512}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2548}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2550}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2672}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2996}
+      Script: {instanceID: 2840}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3158}
+    - Class: 114
+      Script: {instanceID: 3214}
     - Class: 114
       Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3408}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3490}
+      Script: {instanceID: 3410}
     - Class: 114
-      Script: {instanceID: 3606}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3608}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3772}
     - Class: 114
-      Script: {instanceID: 3810}
+      Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 3936}
+      Script: {instanceID: 3812}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 4086}
+      Script: {instanceID: 3978}
     - Class: 114
-      Script: {instanceID: 16344}
+      Script: {instanceID: 4088}
+    - Class: 114
+      Script: {instanceID: 16318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -557,6 +564,12 @@ ScriptsOnlyBuild:
     className: WebRpcImplementationExample
   - hash:
       serializedVersion: 2
+      Hash: 4beb70fcde94551b9d3f276c6c53df6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerListItemInitializer
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -707,7 +720,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomAutoCleanupProperty
   - hash:
       serializedVersion: 2
-      Hash: dfdce2f133fa7207951ba1ac66e63e33
+      Hash: d25158a300128c71f04a2812d98c59b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager

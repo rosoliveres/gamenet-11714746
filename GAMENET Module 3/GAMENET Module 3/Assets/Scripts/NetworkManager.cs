@@ -28,9 +28,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     [Header("Inside Room Panel")]
     public GameObject InsideRoomUIPanel;
+    public Text RoomInfoText;
+    public GameObject PlayerListPrefab;
+    public GameObject PlayerListParent;
    
     [Header("Join Random Room Panel")]
     public GameObject JoinRandomRoomUIPanel;
+
+    private Dictionary<int, GameObject> playerListGameobjects;
 
     #region Unity Methods
     // Start is called before the first frame update
@@ -120,7 +125,55 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         if(PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue("gm", out gameModeName))
         {
             Debug.Log(gameModeName.ToString());
+            RoomInfoText.text = PhotonNetwork.CurrentRoom.Name + " " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers;
         }
+
+        if(playerListGameobjects == null)
+        {
+            playerListGameobjects = new Dictionary<int, GameObject>();
+        }
+
+        foreach(Player player in PhotonNetwork.PlayerList)
+        {
+            GameObject playerListItem = Instantiate(PlayerListPrefab);
+            playerListItem.transform.SetParent(PlayerListParent.transform);
+            playerListItem.transform.localScale = Vector3.one;
+
+            playerListItem.GetComponent<PlayerListItemInitializer>().Initialize(player.ActorNumber, player.NickName);
+            playerListGameobjects.Add(player.ActorNumber, playerListItem);
+        }
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        GameObject playerListItem = Instantiate(PlayerListPrefab);
+        playerListItem.transform.SetParent(PlayerListParent.transform);
+        playerListItem.transform.localScale = Vector3.one;
+
+        playerListItem.GetComponent<PlayerListItemInitializer>().Initialize(newPlayer.ActorNumber, newPlayer.NickName);
+        playerListGameobjects.Add(newPlayer.ActorNumber, playerListItem);
+
+        RoomInfoText.text = PhotonNetwork.CurrentRoom.Name + " " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers;
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        Destroy(playerListGameobjects[otherPlayer.ActorNumber].gameObject);
+        playerListGameobjects.Remove(otherPlayer.ActorNumber);
+
+        RoomInfoText.text = PhotonNetwork.CurrentRoom.Name + " " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers;
+    }
+
+    public override void OnLeftRoom()
+    {
+        ActivatePanel(GameOptionsUIPanel.name);
+        foreach(GameObject playerListGameobject in playerListGameobjects.Values)
+        {
+            Destroy(playerListGameobject);
+        }
+
+        playerListGameobjects.Clear();
+        playerListGameobjects = null;
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)
@@ -165,7 +218,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         RoomOptions roomOptions = new RoomOptions();
         string[] roomPropertiesInLobby = { "gm" }; // gm = game mode
-
+        roomOptions.MaxPlayers = 3;
         //Making a "hashtable" - similar to a dictionary (has a key and corresponding val)
         /*
          * Game modes: 
