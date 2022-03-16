@@ -166,7 +166,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4088}
     - Class: 114
-      Script: {instanceID: 16318}
+      Script: {instanceID: 16320}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -720,7 +720,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomAutoCleanupProperty
   - hash:
       serializedVersion: 2
-      Hash: d25158a300128c71f04a2812d98c59b5
+      Hash: 0f09846c9a65776187e9d20030ed10cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager

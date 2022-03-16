@@ -31,6 +31,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Text RoomInfoText;
     public GameObject PlayerListPrefab;
     public GameObject PlayerListParent;
+    public GameObject StartGameButton;
    
     [Header("Join Random Room Panel")]
     public GameObject JoinRandomRoomUIPanel;
@@ -95,6 +96,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         ActivatePanel(GameOptionsUIPanel.name);
     }
+
+    public void OnLeaveGameButtonClicked()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
     #endregion
 
     #region Photon Callbacks
@@ -140,8 +146,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             playerListItem.transform.localScale = Vector3.one;
 
             playerListItem.GetComponent<PlayerListItemInitializer>().Initialize(player.ActorNumber, player.NickName);
+
+            object isPlayerReady;
+            if(player.CustomProperties.TryGetValue(Constants. PLAYER_READY, out isPlayerReady))
+            {
+                playerListItem.GetComponent<PlayerListItemInitializer>().SetPlayerReady((bool)isPlayerReady);   // cast the isPlayerReady 'object' as 'bool'
+            }
             playerListGameobjects.Add(player.ActorNumber, playerListItem);
         }
+
+        StartGameButton.SetActive(false);
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -154,6 +168,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         playerListGameobjects.Add(newPlayer.ActorNumber, playerListItem);
 
         RoomInfoText.text = PhotonNetwork.CurrentRoom.Name + " " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers;
+        StartGameButton.SetActive(CheckAllPlayersReady());
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
@@ -181,6 +196,34 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log(message);
 
         CreateRoom();
+    }
+
+    /* called when a property of the player is updated
+     * E.g. in this case, when the player's property 'isPlayerReady' is updated, 
+     * the gameobject in the list is updated
+     * Thats why everyone can see the ready icon when someone's 'isPlayerReady' is updated
+     */
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
+    {
+        GameObject playerListGameObject;
+        if(playerListGameobjects.TryGetValue(targetPlayer.ActorNumber, out playerListGameObject))
+        {
+            object isPlayerReady;
+            if(changedProps.TryGetValue(Constants.PLAYER_READY, out isPlayerReady))
+            {
+                playerListGameObject.GetComponent<PlayerListItemInitializer>().SetPlayerReady((bool) isPlayerReady);
+            }
+        }
+
+        StartGameButton.SetActive(CheckAllPlayersReady());
+    }
+
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        if(PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber)
+        {
+            StartGameButton.SetActive(CheckAllPlayersReady());
+        }
     }
 
     #endregion
@@ -230,6 +273,35 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         roomOptions.CustomRoomPropertiesForLobby = roomPropertiesInLobby;
         roomOptions.CustomRoomProperties = customRoomProperties;
         PhotonNetwork.CreateRoom(roomName, roomOptions);
+    }
+
+    private bool CheckAllPlayersReady()
+    {
+        // if player is not the master client
+        if(!PhotonNetwork.IsMasterClient)
+        {
+            return false;
+        }
+
+        foreach(Player p in PhotonNetwork.PlayerList)
+        {
+            object isPlayerReady;
+            if(p.CustomProperties.TryGetValue(Constants.PLAYER_READY, out isPlayerReady))
+            {
+                // if one player is not ready, return false
+                if(!(bool) isPlayerReady)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                // if cannot get the value, return false
+                return false;
+            }
+        }
+
+        return true;
     }
     #endregion
 }

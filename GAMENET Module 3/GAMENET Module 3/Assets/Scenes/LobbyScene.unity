@@ -3352,6 +3352,7 @@ MonoBehaviour:
   RoomInfoText: {fileID: 314537884}
   PlayerListPrefab: {fileID: 1294863439290794768, guid: 46f749e614f847a47940ad1dde964668, type: 3}
   PlayerListParent: {fileID: 244169819}
+  StartGameButton: {fileID: 1279214256}
   JoinRandomRoomUIPanel: {fileID: 1438516555}
 --- !u!4 &890988908
 Transform:
@@ -7537,8 +7538,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 890988907}
+        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
         m_MethodName: OnLeaveGameButtonClicked
         m_Mode: 1
         m_Arguments:
