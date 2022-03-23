@@ -1,8 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CountdownManager
     - NetworkManager
     - PlayerListItemInitializer
+    - PlayerSelection
+    - PlayerSetup
+    - RacingGameManager
+    - UnityStandardAssets.Water.WaterBasic
+    - VehicleMovement
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -52,6 +58,29 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
+    Assets/Scenes/DeathRaceScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     Assets/Scenes/LobbyScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -92,81 +121,89 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1460}
-    - Class: 114
       Script: {instanceID: 1462}
     - Class: 114
       Script: {instanceID: 1464}
     - Class: 114
-      Script: {instanceID: 1624}
+      Script: {instanceID: 1466}
     - Class: 114
-      Script: {instanceID: 1732}
+      Script: {instanceID: 1626}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 1796}
+      Script: {instanceID: 1758}
     - Class: 114
-      Script: {instanceID: 1810}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1800}
+    - Class: 114
+      Script: {instanceID: 1814}
     - Class: 114
       Script: {instanceID: 1848}
     - Class: 114
-      Script: {instanceID: 1940}
+      Script: {instanceID: 1852}
     - Class: 114
-      Script: {instanceID: 2020}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2108}
+      Script: {instanceID: 2024}
     - Class: 114
-      Script: {instanceID: 2396}
+      Script: {instanceID: 2112}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 2402}
     - Class: 114
-      Script: {instanceID: 2514}
+      Script: {instanceID: 2440}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2512}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2520}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2556}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2848}
     - Class: 114
-      Script: {instanceID: 3158}
+      Script: {instanceID: 2956}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 3388}
+      Script: {instanceID: 3224}
     - Class: 114
-      Script: {instanceID: 3410}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3400}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3422}
     - Class: 114
-      Script: {instanceID: 3772}
+      Script: {instanceID: 3504}
     - Class: 114
-      Script: {instanceID: 3786}
+      Script: {instanceID: 3620}
     - Class: 114
-      Script: {instanceID: 3812}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 3938}
+      Script: {instanceID: 3798}
     - Class: 114
-      Script: {instanceID: 3978}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 4088}
+      Script: {instanceID: 3950}
     - Class: 114
-      Script: {instanceID: 16320}
+      Script: {instanceID: 3990}
+    - Class: 114
+      Script: {instanceID: 4100}
+    - Class: 114
+      Script: {instanceID: 16342}
+    - Class: 114
+      Script: {instanceID: 16582}
+    - Class: 114
+      Script: {instanceID: 24398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -200,6 +237,103 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/RacingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1758}
+    - Class: 114
+      Script: {instanceID: 1944}
+    - Class: 114
+      Script: {instanceID: 2864}
+    - Class: 114
+      Script: {instanceID: 2956}
+    - Class: 114
+      Script: {instanceID: 3168}
+    - Class: 114
+      Script: {instanceID: 3224}
+    - Class: 114
+      Script: {instanceID: 3244}
+    - Class: 114
+      Script: {instanceID: 3398}
+    - Class: 114
+      Script: {instanceID: 3422}
+    - Class: 114
+      Script: {instanceID: 3784}
+    - Class: 114
+      Script: {instanceID: 3824}
+    - Class: 114
+      Script: {instanceID: 16582}
+    - Class: 114
+      Script: {instanceID: 24398}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 193
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 205
+      Script: {instanceID: 0}
+    - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 226
+      Script: {instanceID: 0}
+    - Class: 227
+      Script: {instanceID: 0}
+    - Class: 228
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 1953259897
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -382,6 +516,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 01f445d9fd481423ec658786b024c358
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VehicleMovement
   - hash:
       serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
@@ -666,6 +806,12 @@ ScriptsOnlyBuild:
     className: CurrentRoomMaxPlayersProperty
   - hash:
       serializedVersion: 2
+      Hash: aa6bfa1d443b0ad032a8ba3e271d1b84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerSelection
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -720,7 +866,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomAutoCleanupProperty
   - hash:
       serializedVersion: 2
-      Hash: 0f09846c9a65776187e9d20030ed10cf
+      Hash: bfb5c45a7d57a1f8f50b030e48f6c821
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
@@ -972,6 +1118,12 @@ ScriptsOnlyBuild:
     className: NamePickGui
   - hash:
       serializedVersion: 2
+      Hash: 9dd7b5820afd4806c494aacc92759521
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RacingGameManager
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1126,6 +1278,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CountOfPlayersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Water
+    className: WaterBasic
   - hash:
       serializedVersion: 2
       Hash: a8e4bc52348c9279d138a27b5a850d5b
@@ -1522,8 +1680,22 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 7b23eab0455a7931ce0f49da35f762d1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerSetup
+  - hash:
+      serializedVersion: 2
+      Hash: 06a6336f6adf8f5f3894389ce7098fb6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CountdownManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/LobbyScene.unity
+  - Assets/Scenes/RacingScene.unity
+  - Assets/Scenes/DeathRaceScene.unity
   playerPath: D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3/Temp Builds/GAMENET
     Module 3.exe
