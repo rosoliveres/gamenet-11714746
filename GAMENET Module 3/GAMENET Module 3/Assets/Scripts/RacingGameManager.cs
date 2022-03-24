@@ -14,6 +14,8 @@ public class RacingGameManager : MonoBehaviour
 
     public List<GameObject> LapTriggers = new List<GameObject>();
 
+    public GameObject[] FinisherTextUi;
+
     private void Awake()
     {
         if(instance == null)
@@ -42,6 +44,11 @@ public class RacingGameManager : MonoBehaviour
                 Vector3 startingPosition = StartingPositions[actorNumber - 1].position;
                 PhotonNetwork.Instantiate(VehiclePrefabs[(int)playerSelectionNumber].name, startingPosition, Quaternion.identity);
             }
+        }
+
+        foreach(GameObject go in FinisherTextUi)
+        {
+            go.SetActive(false);
         }
     }
 

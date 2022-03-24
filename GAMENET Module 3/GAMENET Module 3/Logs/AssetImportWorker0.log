@@ -15,11 +15,11 @@ D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62205
+52178
 Successfully changed project path to: D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3
 D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.07 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path D:/Unity 2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1221 +35,134 @@ Initialize mono
 Mono path[0] = 'D:/Unity 2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity 2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity 2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity 2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001395 seconds.
+Registered in 0.001074 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 46.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.371 seconds
+- Completed reload, in  1.149 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004006 seconds.
+Registered in 0.002289 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.64 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.334 seconds
+- Completed reload, in  1.449 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.39 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1358 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.0 MB.
-System memory in use after: 78.1 MB.
+Unloading 1361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.5 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1809.
-Total: 5.808800 ms (FindLiveObjects: 0.335400 ms CreateObjectMapping: 0.176800 ms MarkObjects: 5.030000 ms  DeleteObjects: 0.263600 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1812.
+Total: 2.560300 ms (FindLiveObjects: 0.254300 ms CreateObjectMapping: 0.068600 ms MarkObjects: 2.096800 ms  DeleteObjects: 0.125700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/PlayerSelection.cs
-  artifactKey: Guid(9ee38c5b15db8214f95ad3ebf9690787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerSelection.cs using Guid(9ee38c5b15db8214f95ad3ebf9690787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a222e91e4c0c95f6e73dd82af46b7a0') in 0.212501 seconds
-  Import took 0.249595 seconds .
+  path: Assets/Scenes/RacingScene.unity
+  artifactKey: Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RacingScene.unity using Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7752ac8d8e6818d8e9709f2a73ef9d5') in 0.017389 seconds
+  Import took 0.020390 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006310 seconds.
+Registered in 0.002818 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.432 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1339 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.5 MB.
-System memory in use after: 76.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1814.
-Total: 1.982000 ms (FindLiveObjects: 0.184600 ms CreateObjectMapping: 0.055200 ms MarkObjects: 1.683000 ms  DeleteObjects: 0.057900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 97.809281 seconds.
-  path: Assets/Scripts/PlayerSetup.cs
-  artifactKey: Guid(17ca1339a6760144da75018f97b49d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerSetup.cs using Guid(17ca1339a6760144da75018f97b49d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad1955a753d42cd31ce0e6931030420') in 0.003670 seconds
-  Import took 0.005861 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002794 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.156 seconds
+- Completed reload, in  1.538 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1339 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.5 MB.
-System memory in use after: 76.6 MB.
+Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.9 MB.
+System memory in use after: 77.0 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1818.
-Total: 2.033600 ms (FindLiveObjects: 0.156800 ms CreateObjectMapping: 0.046400 ms MarkObjects: 1.768200 ms  DeleteObjects: 0.060800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 286.576895 seconds.
-  path: Assets/Scripts/PlayerSetup.cs
-  artifactKey: Guid(17ca1339a6760144da75018f97b49d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerSetup.cs using Guid(17ca1339a6760144da75018f97b49d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e45a808536f753e9f461637181d561') in 0.004583 seconds
-  Import took 0.007331 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 84.552729 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9db2e2cd869f91285d2908deb3f2a5') in 0.167429 seconds
-  Import took 0.170748 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943b98a3b1bdc4fb6d1b7bd993d12905') in 0.021424 seconds
-  Import took 0.024878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000351 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4eae336a99fc6686ba291b6f5cb7c0') in 0.048669 seconds
-  Import took 0.052215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000468 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728e86750521e2a2aa6913cdf9dd605f') in 0.053556 seconds
-  Import took 0.057365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef30ecd9a822df1f47937d83a65eb1b') in 0.020526 seconds
-  Import took 0.024845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04e86c30152d8edd0d54886b5365c96') in 0.019657 seconds
-  Import took 0.023416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d86def8b86ba0b7b98e06276f7970de') in 0.055109 seconds
-  Import took 0.059328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01ee0df0fdba84b6e3f79ee0ff4f885') in 0.061043 seconds
-  Import took 0.064714 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.49 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 53.6 MB.
-System memory in use after: 53.7 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1825.
-Total: 4.283100 ms (FindLiveObjects: 0.592700 ms CreateObjectMapping: 0.225600 ms MarkObjects: 3.399200 ms  DeleteObjects: 0.064000 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1816.
+Total: 1.766300 ms (FindLiveObjects: 0.162300 ms CreateObjectMapping: 0.045700 ms MarkObjects: 1.501300 ms  DeleteObjects: 0.056000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002747 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.610 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1339 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.7 MB.
-System memory in use after: 79.8 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1829.
-Total: 6.583800 ms (FindLiveObjects: 0.332200 ms CreateObjectMapping: 0.181900 ms MarkObjects: 5.878200 ms  DeleteObjects: 0.187500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 186.498029 seconds.
-  path: Assets/Scenes/RacingScene.unity
-  artifactKey: Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/RacingScene.unity using Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e787e2bbf59f7cc3923c254c7756b631') in 0.040743 seconds
-  Import took 0.045017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 190.654691 seconds.
-  path: Assets/Scripts/CountdownManager.cs
-  artifactKey: Guid(126241bcc8246a544ad8af41772f430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CountdownManager.cs using Guid(126241bcc8246a544ad8af41772f430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92dd6f6373df5b6c74b53cbd7aa4035') in 0.003109 seconds
-  Import took 0.007295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001009 seconds.
-  path: Assets/Scripts/CountdownManager.cs
-  artifactKey: Guid(126241bcc8246a544ad8af41772f430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CountdownManager.cs using Guid(126241bcc8246a544ad8af41772f430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92dd6f6373df5b6c74b53cbd7aa4035') in 0.002783 seconds
-  Import took 0.007782 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002910 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.508 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1340 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.8 MB.
-System memory in use after: 79.8 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1834.
-Total: 2.666900 ms (FindLiveObjects: 0.178000 ms CreateObjectMapping: 0.045700 ms MarkObjects: 2.363900 ms  DeleteObjects: 0.078000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.438744 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89f2aa08bec9ef265076fdd43a90c01') in 0.104687 seconds
-  Import took 0.108817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ada8957f2647c41bebe0008acea92a') in 0.016923 seconds
-  Import took 0.020615 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000410 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2affcd3883b8cc7d63de77d028f847') in 0.018555 seconds
-  Import took 0.022694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000464 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb1379b4749d87c44bd6e40aa25c088') in 0.020561 seconds
-  Import took 0.024253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b667e2ba26cd69ebf818cd0f00b09b4') in 0.015811 seconds
-  Import took 0.019321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb37d139ae322e4a0c154ba2f07b391') in 0.015921 seconds
-  Import took 0.019257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68640e97047f507789b5daccc76f1d5c') in 0.024361 seconds
-  Import took 0.027824 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000472 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f2595a40fdea0aee3550583efd9fc7') in 0.018737 seconds
-  Import took 0.023171 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002523 seconds.
+Registered in 0.002871 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.412 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1340 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.8 MB.
-System memory in use after: 79.9 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1839.
-Total: 2.452100 ms (FindLiveObjects: 0.202400 ms CreateObjectMapping: 0.055200 ms MarkObjects: 2.122200 ms  DeleteObjects: 0.070600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 672.255793 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0becd0de6e9ac3b7c836e514b3362fb3') in 0.361968 seconds
-  Import took 0.366121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000534 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4dea22663d434c6f596e4c90164360') in 0.108874 seconds
-  Import took 0.125704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001437 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9752ce9411289f9dc5d07a3de81d21') in 0.031789 seconds
-  Import took 0.040364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ed906d8f67d7c6334d56dd0ab1233d') in 0.027724 seconds
-  Import took 0.032389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6b208bc9968d6e1a427b684d608ff5') in 0.023987 seconds
-  Import took 0.029042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209ff5069b3b1d5e8d37b67521af2993') in 0.016310 seconds
-  Import took 0.020909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be05a129eca6118eeaacd78244c63815') in 0.014616 seconds
-  Import took 0.020803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0591e84a832c34e2a79b44e19d9533b') in 0.016526 seconds
-  Import took 0.020511 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004167 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.589 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1340 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.8 MB.
-System memory in use after: 79.9 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1844.
-Total: 1.856500 ms (FindLiveObjects: 0.179400 ms CreateObjectMapping: 0.034800 ms MarkObjects: 1.590100 ms  DeleteObjects: 0.051300 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 53.4 MB.
-System memory in use after: 53.5 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1844.
-Total: 4.191900 ms (FindLiveObjects: 0.309600 ms CreateObjectMapping: 0.125700 ms MarkObjects: 3.658700 ms  DeleteObjects: 0.095900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004179 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.011 seconds
+- Completed reload, in  1.331 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1340 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.8 MB.
-System memory in use after: 79.9 MB.
+Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.0 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1848.
-Total: 4.114600 ms (FindLiveObjects: 0.360800 ms CreateObjectMapping: 0.090100 ms MarkObjects: 3.466500 ms  DeleteObjects: 0.194600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1094.033179 seconds.
-  path: Assets/Scenes/RacingScene.unity
-  artifactKey: Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/RacingScene.unity using Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297df2ac876560ab35565d6e3dadac19') in 0.080792 seconds
-  Import took 0.085239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 452.068006 seconds.
-  path: Assets/Scripts/LapController.cs
-  artifactKey: Guid(c2d4e26c97687274ba0251ca0834fbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/LapController.cs using Guid(c2d4e26c97687274ba0251ca0834fbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba77529a016536b26fc83ea1bef8ca1b') in 0.005755 seconds
-  Import took 0.011192 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1820.
+Total: 2.001100 ms (FindLiveObjects: 0.146300 ms CreateObjectMapping: 0.046100 ms MarkObjects: 1.748500 ms  DeleteObjects: 0.059500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005227 seconds.
+Registered in 0.004310 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.892 seconds
+- Completed reload, in  1.548 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 79.9 MB.
+System memory in use before: 77.0 MB.
+System memory in use after: 77.0 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1853.
-Total: 2.407100 ms (FindLiveObjects: 0.183100 ms CreateObjectMapping: 0.091500 ms MarkObjects: 2.056400 ms  DeleteObjects: 0.074100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.379104 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85adfcdfe5b59b1bb0cb74ea7158e309') in 0.253237 seconds
-  Import took 0.293541 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1824.
+Total: 1.993800 ms (FindLiveObjects: 0.151100 ms CreateObjectMapping: 0.038400 ms MarkObjects: 1.717300 ms  DeleteObjects: 0.086100 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.002445 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b478f395ae0567162c01544c6aaead') in 0.037638 seconds
-  Import took 0.056727 seconds .
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 50.6 MB.
+System memory in use after: 50.7 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001011 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eafc156119cec4d557f83f9e68d89a36') in 0.073802 seconds
-  Import took 0.114790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba92aa165d5373d951a569a921e499f') in 0.034696 seconds
-  Import took 0.040019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000940 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f0d81e1e1e3aa3a02901f87d95463d') in 0.073320 seconds
-  Import took 0.080471 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc377888b63d873f04ace5183662a308') in 0.035355 seconds
-  Import took 0.044231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b770dd2d9bbb9e56fecc51478ac7a6a') in 0.021595 seconds
-  Import took 0.027768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824d1f39f9f2470234d72e7eb9bd27f3') in 0.024865 seconds
-  Import took 0.040305 seconds .
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1824.
+Total: 3.246900 ms (FindLiveObjects: 0.245300 ms CreateObjectMapping: 0.068300 ms MarkObjects: 2.843600 ms  DeleteObjects: 0.088400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.725 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 80.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1858.
-Total: 2.257000 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.054200 ms MarkObjects: 1.924300 ms  DeleteObjects: 0.066600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004001 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.367 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 80.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1862.
-Total: 1.837900 ms (FindLiveObjects: 0.150500 ms CreateObjectMapping: 0.042600 ms MarkObjects: 1.585400 ms  DeleteObjects: 0.058300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003025 seconds.
+Registered in 0.002299 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.276 seconds
+- Completed reload, in  1.402 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 80.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1866.
-Total: 2.587700 ms (FindLiveObjects: 0.233600 ms CreateObjectMapping: 0.073400 ms MarkObjects: 2.202100 ms  DeleteObjects: 0.076900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 819.263087 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6a35c3cddc746e7501c0bd0ed6d4ce') in 0.064572 seconds
-  Import took 0.068151 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002305 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.283 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 80.0 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1870.
-Total: 2.028200 ms (FindLiveObjects: 0.141000 ms CreateObjectMapping: 0.041700 ms MarkObjects: 1.771900 ms  DeleteObjects: 0.072500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 144.054094 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f1c4f7a9ed0d1041b43e9b6842b51b') in 0.082954 seconds
-  Import took 0.087888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000453 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a76c94695147d25e4f8964ad84a4098') in 0.012914 seconds
-  Import took 0.016694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000416 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845127d949e10c860be92e1137f45355') in 0.014379 seconds
-  Import took 0.018418 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed16e13d9d4c62198967fd2a28d30d6') in 0.030009 seconds
-  Import took 0.033774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd902c2504d9a1dab0a14bcf1fdb894c') in 0.018745 seconds
-  Import took 0.025080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000504 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413a8765af8f283485914b2d61266b9c') in 0.026970 seconds
-  Import took 0.032506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f45a492cb350ed1b7ec7ccf6604809') in 0.017662 seconds
-  Import took 0.021702 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579e91406fe3dc608ffc6fac5ae8ad99') in 0.027145 seconds
-  Import took 0.031656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.504175 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcd2ca01a6f26d00400982bfe4f00ad') in 0.019710 seconds
-  Import took 0.023919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d33e12d0fa3a5885361248ccbd00dce') in 0.028374 seconds
-  Import took 0.032654 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000436 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36cd6b499dd0b1b2b670bff22c8607e1') in 0.018036 seconds
-  Import took 0.022628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000424 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d33e12d0fa3a5885361248ccbd00dce') in 0.012942 seconds
-  Import took 0.017253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000474 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f134843f2ba2db7e93b42ddb5438c53d') in 0.018524 seconds
-  Import took 0.022619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5beba3c327200cba85b1f988e66ea005') in 0.016644 seconds
-  Import took 0.020066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000419 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a539aa0bfa42def56e1138c52ba378b') in 0.039989 seconds
-  Import took 0.044082 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93d6a729a77d8f9b3f9381221199d8e') in 0.019395 seconds
-  Import took 0.023336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000377 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e02893df5bfa9b92ca66fcd62a47c96') in 0.016545 seconds
-  Import took 0.020485 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003204 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.157 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1875.
-Total: 3.463700 ms (FindLiveObjects: 0.267300 ms CreateObjectMapping: 0.074400 ms MarkObjects: 3.002500 ms  DeleteObjects: 0.117700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 188.387668 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd243c680839916d06c3e32620cc36a49') in 0.116447 seconds
-  Import took 0.120518 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002558 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.728 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.72 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1880.
-Total: 5.097500 ms (FindLiveObjects: 0.508300 ms CreateObjectMapping: 0.165900 ms MarkObjects: 4.294300 ms  DeleteObjects: 0.125900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003502 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.333 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1884.
-Total: 2.739600 ms (FindLiveObjects: 0.212600 ms CreateObjectMapping: 0.063400 ms MarkObjects: 2.366800 ms  DeleteObjects: 0.094800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.529156 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd1595681e0980bb761ce3f5d147a74') in 0.109270 seconds
-  Import took 0.114672 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.982605 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd1595681e0980bb761ce3f5d147a74') in 0.012213 seconds
-  Import took 0.015770 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002574 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.542 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1889.
-Total: 7.579900 ms (FindLiveObjects: 1.563600 ms CreateObjectMapping: 0.313200 ms MarkObjects: 5.605200 ms  DeleteObjects: 0.094200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.692584 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac01bea6f61e502711483ab6f12f5e3') in 0.092916 seconds
-  Import took 0.097372 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002401 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.754 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1894.
-Total: 9.520400 ms (FindLiveObjects: 0.666300 ms CreateObjectMapping: 0.624500 ms MarkObjects: 8.120300 ms  DeleteObjects: 0.103900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.598158 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d2534594a393c797bc79507d72fe90') in 0.127791 seconds
-  Import took 0.132012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.449094 seconds.
-  path: Assets/Resources/Yellow Muscle.prefab
-  artifactKey: Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Yellow Muscle.prefab using Guid(033856eacc46fe44593964ea6a789c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1400a69ad2d26f719e47a818f4368e8e') in 0.026302 seconds
-  Import took 0.030731 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003894 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.605 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1899.
-Total: 9.510500 ms (FindLiveObjects: 0.809600 ms CreateObjectMapping: 0.528400 ms MarkObjects: 7.795200 ms  DeleteObjects: 0.371800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 134.350717 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8bf2b43ffd367e5914f2b0ada189078') in 0.170531 seconds
-  Import took 0.210209 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c72704376c2a689ca49b0705f77e599f') in 0.022241 seconds
-  Import took 0.027241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e1f4f15a66badacbd674c0f7661b38') in 0.019935 seconds
-  Import took 0.024443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72cad380accfa5dfeec92ddbdff59e1') in 0.023783 seconds
-  Import took 0.028006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d78f0827c22ed4daf9ab12ff28c4e8c') in 0.018919 seconds
-  Import took 0.022633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94016dbaf461194bb2be9a6598967d55') in 0.017419 seconds
-  Import took 0.021169 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8583ade0b6195a476daabbd277b215d5') in 0.020840 seconds
-  Import took 0.024404 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.242835 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4c034375a3915b4ebfc5271ecc0a7c') in 0.027012 seconds
-  Import took 0.032117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000458 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3564ef223cd5efad72a4cd87fdf50658') in 0.018946 seconds
-  Import took 0.022908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000449 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e96d53c26600180ebacf513d5a675e') in 0.019141 seconds
-  Import took 0.024508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6b105c4d03d22dda854f7131d02926') in 0.020436 seconds
-  Import took 0.025331 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000579 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f3ee639ece18b5d09356d8c8638128') in 0.021324 seconds
-  Import took 0.025302 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000461 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86596c29d8ec02474426818857a51e00') in 0.024572 seconds
-  Import took 0.029906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6977ea0a7426eee9367a0ac028d0e30') in 0.025120 seconds
-  Import took 0.030114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.561171 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3e2c4456129fa2003feb36452c3ba4b') in 0.029181 seconds
-  Import took 0.035196 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000497 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f2eae7c03c7bae7dd73b6024a04aeb') in 0.020083 seconds
-  Import took 0.024513 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000458 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b8b9d443cbe136eb257d4dc5206cf09') in 0.023224 seconds
-  Import took 0.031227 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000509 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c453a43508ee6b37ae67477c31b7145') in 0.022476 seconds
-  Import took 0.027282 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000351 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a509d8afb4e06b040a7837ce7dc62b') in 0.019978 seconds
-  Import took 0.024451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617c564ab82c0abd5d6b8a5ed01a0bfb') in 0.020860 seconds
-  Import took 0.025600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000465 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd11713e6ae01d89696ea7338931f423') in 0.022527 seconds
-  Import took 0.026380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.482173 seconds.
-  path: Assets/Resources/Black Muscle.prefab
-  artifactKey: Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Black Muscle.prefab using Guid(7cf99daa63d5d0f408a892a63e023756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed54dfdf379f6a75fb366d39fa8f0881') in 0.020109 seconds
-  Import took 0.025649 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000457 seconds.
-  path: Assets/Resources/GTR.prefab
-  artifactKey: Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GTR.prefab using Guid(d23cd6e70c9803b4c9d7417ead909ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1ae3bcb9e3f166ef7b054b24dbab01') in 0.027048 seconds
-  Import took 0.032751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000419 seconds.
-  path: Assets/Resources/Striped Muscle.prefab
-  artifactKey: Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Striped Muscle.prefab using Guid(bae7ed6d8b9b201438a3ee6d8b09da25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212591bcd43f709d0da88ce9db0b5227') in 0.029222 seconds
-  Import took 0.035199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Resources/White Sports.prefab
-  artifactKey: Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/White Sports.prefab using Guid(ea7c59e58d3f38d40987f7ef72411a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1101ae31d56eb19b004db97d79f206c') in 0.029046 seconds
-  Import took 0.034087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000467 seconds.
-  path: Assets/Resources/Blue Muscle.prefab
-  artifactKey: Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Blue Muscle.prefab using Guid(1be26f7d635eb674f8e8b2779870b600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1909df8119704c2eede67a1d411f3614') in 0.022442 seconds
-  Import took 0.027529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Resources/Plain Sports.prefab
-  artifactKey: Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Plain Sports.prefab using Guid(e9eaf2ece49c9ac41b9f15fa30f867a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b010e0a055fdafbaadfc3ec8c3bfcbf7') in 0.022063 seconds
-  Import took 0.026165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000430 seconds.
-  path: Assets/Resources/Red Sports.prefab
-  artifactKey: Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Red Sports.prefab using Guid(4491241e38e3b1246938a6c6ee0892a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68c08b48a3b5e3fd57d5ecea1e3f76b') in 0.021965 seconds
-  Import took 0.026704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.584172 seconds.
-  path: Assets/Scenes/RacingScene.unity
-  artifactKey: Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/RacingScene.unity using Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f75d8927c028651f2a8c38c57e845d') in 0.005264 seconds
-  Import took 0.009151 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004999 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.571 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.1 MB.
-System memory in use after: 80.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1904.
-Total: 2.335000 ms (FindLiveObjects: 0.237200 ms CreateObjectMapping: 0.064200 ms MarkObjects: 1.962400 ms  DeleteObjects: 0.069300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002318 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.199 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.1 MB.
-System memory in use after: 80.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1908.
-Total: 5.062600 ms (FindLiveObjects: 0.214000 ms CreateObjectMapping: 0.067900 ms MarkObjects: 4.534100 ms  DeleteObjects: 0.240700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002867 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.607 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.1 MB.
-System memory in use after: 80.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1912.
-Total: 2.804000 ms (FindLiveObjects: 0.201700 ms CreateObjectMapping: 0.063400 ms MarkObjects: 2.457000 ms  DeleteObjects: 0.080100 ms)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1828.
+Total: 3.064800 ms (FindLiveObjects: 0.215300 ms CreateObjectMapping: 0.065400 ms MarkObjects: 2.692300 ms  DeleteObjects: 0.090100 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
