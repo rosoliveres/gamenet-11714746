@@ -681,7 +681,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Machine Gun \nDamage 100- FireRate 10"
+  m_Text: Laser Gun
 --- !u!222 &223612674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6646,7 +6646,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Machine Gun \nDamage 100- FireRate 10"
+  m_Text: Machine Gun
 --- !u!222 &1694358759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6802,7 +6802,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Machine Gun Damage 100- FireRate 10
+  m_Text: Laser Gun
 --- !u!222 &1805289359
 CanvasRenderer:
   m_ObjectHideFlags: 0

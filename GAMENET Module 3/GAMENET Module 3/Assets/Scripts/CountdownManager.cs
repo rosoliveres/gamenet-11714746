@@ -12,7 +12,14 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        TimerTMP = RacingGameManager.instance.TimerTMP;
+        if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("rc"))
+        {
+            TimerTMP = RacingGameManager.instance.TimerTMP;
+        }
+        else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("dr"))
+        {
+            TimerTMP = DeathRaceGameManager.Instance.TimerTMP;
+        }
     }
 
     // Update is called once per frame
