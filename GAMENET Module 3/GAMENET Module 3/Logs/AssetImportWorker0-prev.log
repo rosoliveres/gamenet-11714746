@@ -15,11 +15,11 @@ D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64187
+63950
 Successfully changed project path to: D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3
 D:/School/GAMENET/GAMENET Module 3/GAMENET Module 3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 35.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 50.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path D:/Unity 2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,515 +35,143 @@ Initialize mono
 Mono path[0] = 'D:/Unity 2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity 2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity 2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity 2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001007 seconds.
+Registered in 0.001177 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 27.93 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 45.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.912 seconds
+- Completed reload, in  1.631 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001708 seconds.
+Registered in 0.003852 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.333 seconds
+- Completed reload, in  2.350 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1362 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.5 MB.
-System memory in use after: 78.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1813.
-Total: 2.030900 ms (FindLiveObjects: 0.164100 ms CreateObjectMapping: 0.044700 ms MarkObjects: 1.723900 ms  DeleteObjects: 0.097200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/Health.cs
-  artifactKey: Guid(2780963538f1b724988a0a19e5ee48d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Health.cs using Guid(2780963538f1b724988a0a19e5ee48d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1aa60b81236973886bd1ef27b7da8e') in 0.044919 seconds
-  Import took 0.128785 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001971 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.919 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.0 MB.
-System memory in use after: 77.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1817.
-Total: 1.870100 ms (FindLiveObjects: 0.174200 ms CreateObjectMapping: 0.034800 ms MarkObjects: 1.494300 ms  DeleteObjects: 0.166000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.669234 seconds.
-  path: Assets/Scripts/RacingGameManager.cs
-  artifactKey: Guid(dc7bfc7aded0d034fb68b77fdcf719d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RacingGameManager.cs using Guid(dc7bfc7aded0d034fb68b77fdcf719d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40fd2011fd5de1f0a94fa42e4a39560') in 0.099543 seconds
-  Import took 0.157029 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003451 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.329 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.0 MB.
-System memory in use after: 77.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1821.
-Total: 3.334900 ms (FindLiveObjects: 0.368100 ms CreateObjectMapping: 0.078400 ms MarkObjects: 2.789600 ms  DeleteObjects: 0.096300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2050.961449 seconds.
-  path: Assets/Scripts/Health.cs
-  artifactKey: Guid(2780963538f1b724988a0a19e5ee48d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Health.cs using Guid(2780963538f1b724988a0a19e5ee48d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0651f0afd236c89dfbc32b4100fe848d') in 0.004852 seconds
-  Import took 0.008180 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002905 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.659 seconds
-Platform modules already initialized, skipping
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
 Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.0 MB.
-System memory in use after: 77.1 MB.
+Unloading 1364 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.0 MB.
+System memory in use after: 79.0 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1825.
-Total: 13.170100 ms (FindLiveObjects: 1.622100 ms CreateObjectMapping: 0.222700 ms MarkObjects: 10.982700 ms  DeleteObjects: 0.336300 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1815.
+Total: 6.191100 ms (FindLiveObjects: 0.380500 ms CreateObjectMapping: 0.114200 ms MarkObjects: 5.430900 ms  DeleteObjects: 0.263400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 274.527552 seconds.
-  path: Assets/Scripts/DeathRaceGame
-  artifactKey: Guid(320ac60ad7d737f4c875d6a7f761a1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DeathRaceGame using Guid(320ac60ad7d737f4c875d6a7f761a1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06fad9974b5e797e305c9183dfeb06c') in 0.009903 seconds
-  Import took 0.016386 seconds .
+  path: Assets/Scripts/DeathRaceGame/LaserShooting.cs
+  artifactKey: Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DeathRaceGame/LaserShooting.cs using Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d60d188d3acb8e4da4ca9841c62841') in 0.070782 seconds
+  Import took 0.076670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 200.359893 seconds.
+  path: Assets/Scripts/DeathRaceGame/LaserShooting.cs
+  artifactKey: Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DeathRaceGame/LaserShooting.cs using Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0bf6c3243fef473384cbff0c8232dd') in 0.003362 seconds
+  Import took 0.007202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.537954 seconds.
+  path: Assets/Scripts/DeathRaceGame/LaserShooting.cs
+  artifactKey: Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DeathRaceGame/LaserShooting.cs using Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cb816209bed656fc544c479e818962') in 0.002887 seconds
+  Import took 0.007110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 342.011123 seconds.
+  path: Assets/Scripts/DeathRaceGame/LaserShooting.cs
+  artifactKey: Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DeathRaceGame/LaserShooting.cs using Guid(af1f665b34f50474c90c87df9100214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0104ecfa4f196411c6a2fbc14467cc7') in 0.004415 seconds
+  Import took 0.010058 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004653 seconds.
+Registered in 0.003409 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.122 seconds
+- Completed reload, in  1.040 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.1 MB.
-System memory in use after: 77.1 MB.
+Unloading 1344 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.5 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1829.
-Total: 2.899100 ms (FindLiveObjects: 0.300600 ms CreateObjectMapping: 0.093200 ms MarkObjects: 2.406900 ms  DeleteObjects: 0.096700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.550002 seconds.
-  path: Assets/Scripts/DeathRaceGame/DeathRaceGameManager.cs
-  artifactKey: Guid(58b2ecddcbe6ae94b95efafcfa3e3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DeathRaceGame/DeathRaceGameManager.cs using Guid(58b2ecddcbe6ae94b95efafcfa3e3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1088743fb98a20b979d154353ac376a5') in 0.012804 seconds
-  Import took 0.017722 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003017 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.614 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.1 MB.
-System memory in use after: 77.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1834.
-Total: 3.318900 ms (FindLiveObjects: 0.274100 ms CreateObjectMapping: 0.073300 ms MarkObjects: 2.837100 ms  DeleteObjects: 0.131900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002926 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.330 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.1 MB.
-System memory in use after: 77.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1838.
-Total: 2.677400 ms (FindLiveObjects: 0.199600 ms CreateObjectMapping: 0.086200 ms MarkObjects: 2.302200 ms  DeleteObjects: 0.087900 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1819.
+Total: 1.622700 ms (FindLiveObjects: 0.123000 ms CreateObjectMapping: 0.034600 ms MarkObjects: 1.391300 ms  DeleteObjects: 0.072900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 108.089346 seconds.
-  path: Assets/Scripts/DeathRaceGame/DeathRaceGameManager.cs
-  artifactKey: Guid(58b2ecddcbe6ae94b95efafcfa3e3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DeathRaceGame/DeathRaceGameManager.cs using Guid(58b2ecddcbe6ae94b95efafcfa3e3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd838d652497143bb7c1ce0d9f1c07998') in 0.004800 seconds
-  Import took 0.009217 seconds .
+  Time since last request: 208.678419 seconds.
+  path: Assets/Resources/Striped Muscle Laser Gun.prefab
+  artifactKey: Guid(554d45dcffc3b0b4f8a17f1defda9653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Striped Muscle Laser Gun.prefab using Guid(554d45dcffc3b0b4f8a17f1defda9653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cb1b9487c8effec7642bd52367f0d9') in 0.266777 seconds
+  Import took 0.271230 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.018986 seconds.
-  path: Assets/race-track-lake/Models
-  artifactKey: Guid(9faca9d495e0e5c40a0ac102deafa98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models using Guid(9faca9d495e0e5c40a0ac102deafa98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367870b4019056d98dd32a53bcc10b73') in 0.004093 seconds
-  Import took 0.008299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000809 seconds.
-  path: Assets/race-track-lake/Models
-  artifactKey: Guid(9faca9d495e0e5c40a0ac102deafa98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models using Guid(9faca9d495e0e5c40a0ac102deafa98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367870b4019056d98dd32a53bcc10b73') in 0.002386 seconds
-  Import took 0.006213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.246935 seconds.
-  path: Assets/race-track-lake/Models/electrical-towers.FBX
-  artifactKey: Guid(28076010641c5a64594a63a738cfef62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/electrical-towers.FBX using Guid(28076010641c5a64594a63a738cfef62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d53f16bedddffacbe09de01a9e11ed') in 0.695317 seconds
-  Import took 0.698963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/race-track-lake/Models/rocks-mountain-1.FBX
-  artifactKey: Guid(c573322a16271b742bc446c82a9bded7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/rocks-mountain-1.FBX using Guid(c573322a16271b742bc446c82a9bded7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531431820da5cb36c7919d35a65083a9') in 0.366486 seconds
-  Import took 0.370281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000451 seconds.
-  path: Assets/race-track-lake/Models/tire.FBX
-  artifactKey: Guid(c92bea14e5c4591408be760558da7b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/tire.FBX using Guid(c92bea14e5c4591408be760558da7b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a6fae7c2d575eaea31c74f1cfe731b') in 0.205006 seconds
-  Import took 0.208516 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000439 seconds.
-  path: Assets/race-track-lake/Models/race-track.FBX
-  artifactKey: Guid(853554035d67ed8458014b199fd7d9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/race-track.FBX using Guid(853554035d67ed8458014b199fd7d9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2e2de7cf9485dcd06db714ff910c5e') in 1.381181 seconds
-  Import took 1.388031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/race-track-lake/Models/road-signs.FBX
-  artifactKey: Guid(87403507033f0034eab7ba172e32535d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/road-signs.FBX using Guid(87403507033f0034eab7ba172e32535d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb08d5b41f109955fb788c333ca439ec') in 0.109227 seconds
-  Import took 0.113101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/race-track-lake/Models/rocks-mountain-2.FBX
-  artifactKey: Guid(11786ea4822f6214397607504b10357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/rocks-mountain-2.FBX using Guid(11786ea4822f6214397607504b10357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e482f14d01180819715d19c4f0b7191a') in 0.067834 seconds
-  Import took 0.073334 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000472 seconds.
-  path: Assets/race-track-lake/Models/LakeTerrain.asset
-  artifactKey: Guid(4b8644c26c3eb2f4b99babbc1e5cce0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Models/LakeTerrain.asset using Guid(4b8644c26c3eb2f4b99babbc1e5cce0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08de760a6a20c9663f6a9fce7ab44f73') in 0.566435 seconds
-  Import took 0.572135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.451775 seconds.
-  path: Assets/race-track-lake/race_track_lake.unity
-  artifactKey: Guid(2e1336748f3797f4798cf9e588e2620f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/race_track_lake.unity using Guid(2e1336748f3797f4798cf9e588e2620f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92ee7cfe34328070da65cb963e163ef') in 0.005191 seconds
-  Import took 0.009307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.126921 seconds.
-  path: Assets/race-track-lake/Textures
-  artifactKey: Guid(e969196e2612cde4ba5459ffc3848e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Textures using Guid(e969196e2612cde4ba5459ffc3848e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e0d9a3de81d67dc95f41e9073c50de') in 0.017365 seconds
-  Import took 0.020203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.051025 seconds.
-  path: Assets/race-track-lake/Standard Assets
-  artifactKey: Guid(5a9876d93a70a854d8df18a53dc7f6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets using Guid(5a9876d93a70a854d8df18a53dc7f6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3c59ba69f7c7ce1504f180cb253305') in 0.002680 seconds
-  Import took 0.005512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.470443 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment
-  artifactKey: Guid(6ca8c4e270f964e0da9f731d7d34b123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment using Guid(6ca8c4e270f964e0da9f731d7d34b123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68590199e877190c58d5b39b491140f8') in 0.002420 seconds
-  Import took 0.005957 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000672 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment
-  artifactKey: Guid(6ca8c4e270f964e0da9f731d7d34b123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment using Guid(6ca8c4e270f964e0da9f731d7d34b123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68590199e877190c58d5b39b491140f8') in 0.002500 seconds
-  Import took 0.006961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.267314 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree
-  artifactKey: Guid(c04a867c41990cb44b46672730a8e63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree using Guid(c04a867c41990cb44b46672730a8e63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b7ef85f640ac1a11786699485a2dc1') in 0.002075 seconds
-  Import took 0.005474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.798768 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer
-  artifactKey: Guid(73ab447d8034be44f8321c730cc6247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer using Guid(73ab447d8034be44f8321c730cc6247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1456c93554650225828c3b39b613fcd1') in 0.003388 seconds
-  Import took 0.006808 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.116754 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop.spm
-  artifactKey: Guid(469edab27ab6d004d84af2c4a851bd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop.spm using Guid(469edab27ab6d004d84af2c4a851bd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb6add7d4e66ffd7c92915b2073287d') in 0.361969 seconds
-  Import took 0.367310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark_Normal.tga
-  artifactKey: Guid(2b46b029d8dc37049aebb484e79998ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark_Normal.tga using Guid(2b46b029d8dc37049aebb484e79998ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67a8f63e3f1bfdf0cdd3b130c27690b') in 0.040235 seconds
-  Import took 0.044225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000491 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas.tga
-  artifactKey: Guid(ea9799c461d3f6e4eb0be2264829282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas.tga using Guid(ea9799c461d3f6e4eb0be2264829282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50015aac38bc4faa7aeca743d6d5468a') in 0.016977 seconds
-  Import took 0.021081 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000596 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark.tga
-  artifactKey: Guid(9654cfdd87d7daf429b8931c28d7a93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark.tga using Guid(9654cfdd87d7daf429b8931c28d7a93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e55e64387e41d2d68db55750073fda9') in 0.009177 seconds
-  Import took 0.014884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000436 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards.tga
-  artifactKey: Guid(612b65e0cd1576e4bbba0516d756a99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards.tga using Guid(612b65e0cd1576e4bbba0516d756a99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c2d5f35643ea88f3c383c636d86fab') in 0.041606 seconds
-  Import took 0.045883 seconds .
+  Time since last request: 0.000401 seconds.
+  path: Assets/Resources/Red Sports Laser Gun.prefab
+  artifactKey: Guid(4cfb601fab7fb034b93b7560ee973977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Red Sports Laser Gun.prefab using Guid(4cfb601fab7fb034b93b7560ee973977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd056cb3ddc0436456bd562831cde11') in 0.068464 seconds
+  Import took 0.072393 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000397 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg
-  artifactKey: Guid(1fbc4e410d66d804aaf31b4c25b16ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg using Guid(1fbc4e410d66d804aaf31b4c25b16ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13479c7a4b00207782ca5435f8ee3ca') in 0.056663 seconds
-  Import took 0.060658 seconds .
+  path: Assets/Resources/Yellow Muscle Laser Gun.prefab
+  artifactKey: Guid(be26088bf9db9c846a7b78cf60582f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Yellow Muscle Laser Gun.prefab using Guid(be26088bf9db9c846a7b78cf60582f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d108aa16fcc0b64fb7549f722f7d5e') in 0.069606 seconds
+  Import took 0.074138 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Normal.tga
-  artifactKey: Guid(855926cb3532dc14c87b1e6d589334b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Normal.tga using Guid(855926cb3532dc14c87b1e6d589334b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0a63eafd1539c4214fefe867107e2a') in 0.057145 seconds
-  Import took 0.063061 seconds .
+  Time since last request: 0.000411 seconds.
+  path: Assets/Resources/Black Muscle Laser Gun.prefab
+  artifactKey: Guid(b214dcc67b2447343aa694b9917b1459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Black Muscle Laser Gun.prefab using Guid(b214dcc67b2447343aa694b9917b1459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eca0466143af1d9e91a6c1b85906f46') in 0.047211 seconds
+  Import took 0.053042 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000432 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Dekstop_Spec.tga
-  artifactKey: Guid(897461e3c2fa9d84d8bd48bf1b00a950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Dekstop_Spec.tga using Guid(897461e3c2fa9d84d8bd48bf1b00a950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d7b45cfabdc3c0466656de100c73aa') in 0.040590 seconds
-  Import took 0.045586 seconds .
+  Time since last request: 0.000388 seconds.
+  path: Assets/Resources/White Sports Laser Gun.prefab
+  artifactKey: Guid(8ab1619b947200e45a967715182e0704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/White Sports Laser Gun.prefab using Guid(8ab1619b947200e45a967715182e0704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2797c7d60dd0e3a1743383f6c95ad376') in 0.047675 seconds
+  Import took 0.051763 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000750 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop_Normal.tga
-  artifactKey: Guid(ab89d7e9dbd9462458ecef029ee60f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop_Normal.tga using Guid(ab89d7e9dbd9462458ecef029ee60f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e34a2a7df247b63c4d387406cfa76ac') in 0.047678 seconds
-  Import took 0.055136 seconds .
+  Time since last request: 0.000385 seconds.
+  path: Assets/Resources/Blue Muscle Laser Gun.prefab
+  artifactKey: Guid(f7d1fa18312b32649a17b55b9cb3c3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Blue Muscle Laser Gun.prefab using Guid(f7d1fa18312b32649a17b55b9cb3c3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad0999c6060439714818d1a28bf1ec8') in 0.048425 seconds
+  Import took 0.052125 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Specular.tga
-  artifactKey: Guid(41232aac50fb25a40b390906295f9aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Specular.tga using Guid(41232aac50fb25a40b390906295f9aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '211c110b24e2c4f255bad99b0160ff86') in 0.055916 seconds
-  Import took 0.060224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000940 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga
-  artifactKey: Guid(6c2afc8a038f69f4aa35c25dcd94fd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga using Guid(6c2afc8a038f69f4aa35c25dcd94fd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fbf009a83566a3d5c260e0a4357060') in 0.013155 seconds
-  Import took 0.018878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop.tga
-  artifactKey: Guid(34d2758af9e0a2b4690fbcfcad0285d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop.tga using Guid(34d2758af9e0a2b4690fbcfcad0285d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9130348b1f471fe42a663d12e99daf7d') in 0.033821 seconds
-  Import took 0.037491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.391183 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets
-  artifactKey: Guid(7e6f84bf81c8d4de280f1133cff7e601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets using Guid(7e6f84bf81c8d4de280f1133cff7e601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb13f86e3e09734e83d17d8479d1d77') in 0.003203 seconds
-  Import took 0.006978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.817145 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures
-  artifactKey: Guid(4f9d71771b07cb6438e0d35b038b43a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures using Guid(4f9d71771b07cb6438e0d35b038b43a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7740e50df739f6dd6f78ec2b9ba70e0') in 0.003586 seconds
-  Import took 0.008254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001454 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures
-  artifactKey: Guid(4f9d71771b07cb6438e0d35b038b43a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures using Guid(4f9d71771b07cb6438e0d35b038b43a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7740e50df739f6dd6f78ec2b9ba70e0') in 0.023662 seconds
-  Import took 0.027008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.074366 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd
-  artifactKey: Guid(18214e9d6af6248559d501391856f1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd using Guid(18214e9d6af6248559d501391856f1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b2b87ea696dc4067f31faf770cc40d') in 0.043874 seconds
-  Import took 0.047094 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp
-  artifactKey: Guid(ef5c51cfa2ce46043a41a376b560c525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp using Guid(ef5c51cfa2ce46043a41a376b560c525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1239ab112aa81995d4c4500a4aecff96') in 0.049950 seconds
-  Import took 0.053861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000547 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp
-  artifactKey: Guid(58a059b07b093a745b47c2191525ddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp using Guid(58a059b07b093a745b47c2191525ddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928f267ea0efdd357039e602275cd610') in 0.052330 seconds
-  Import took 0.056367 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000465 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd
-  artifactKey: Guid(bfd675cc0db1d4656b75dc6d6ba91142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd using Guid(bfd675cc0db1d4656b75dc6d6ba91142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742cffcbab0ab96dfa34c030f05c2c75') in 0.041439 seconds
-  Import took 0.046356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000449 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd
-  artifactKey: Guid(440eb36db91ca410f800ff3cfe43572f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd using Guid(440eb36db91ca410f800ff3cfe43572f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9efdf606172ace3dcf350bdd83ae2c8') in 0.033645 seconds
-  Import took 0.037118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001087 seconds.
-  path: Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd
-  artifactKey: Guid(c6e0767b1f8c34890ac245217f4b9731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/race-track-lake/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd using Guid(c6e0767b1f8c34890ac245217f4b9731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c60089bc42f03ae1551a7d7960a11f8') in 0.026869 seconds
-  Import took 0.030871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.140469 seconds.
-  path: Assets/Prefabs/raceTrackLakeLevel.prefab
-  artifactKey: Guid(b65e800a2f0c1f043920ae6088d7b0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/raceTrackLakeLevel.prefab using Guid(b65e800a2f0c1f043920ae6088d7b0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513a6ed2da87ebd4632dcfaae6bff9c4') in 0.324494 seconds
-  Import took 0.333046 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 125.884606 seconds.
-  path: Assets/Scenes/RacingScene.unity
-  artifactKey: Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/RacingScene.unity using Guid(e0c7aa748d9a1194ab126af67258b3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96676156a84beaed3c2f149946da63c6') in 0.005650 seconds
-  Import took 0.010600 seconds .
+  Time since last request: 0.000469 seconds.
+  path: Assets/Resources/Plain Sports Laser Gun.prefab
+  artifactKey: Guid(d027f4c94439ae147a4e47e25f42dc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Plain Sports Laser Gun.prefab using Guid(d027f4c94439ae147a4e47e25f42dc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d21bea2347d877ddc3a725c47f154dd') in 0.059719 seconds
+  Import took 0.064292 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
