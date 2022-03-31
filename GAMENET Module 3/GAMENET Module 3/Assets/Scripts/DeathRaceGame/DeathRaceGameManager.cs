@@ -12,6 +12,9 @@ public class DeathRaceGameManager : MonoBehaviour
     public Transform[] StartingPositions;
     public TextMeshProUGUI TimerTMP;
 
+    public GameObject[] DeathTextUI;
+    public int PlayerCount = 0;
+
     private void Awake()
     {
         if (Instance == null)
@@ -39,7 +42,13 @@ public class DeathRaceGameManager : MonoBehaviour
                 int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber;
                 Vector3 startingPosition = StartingPositions[actorNumber - 1].position;
                 PhotonNetwork.Instantiate(VehiclePrefabs[(int)playerSelectionNumber].name, startingPosition, Quaternion.identity);
+                PlayerCount = (int)playerSelectionNumber;
             }
+        }
+
+        foreach (GameObject go in DeathTextUI)
+        {
+            go.SetActive(false);
         }
     }
 

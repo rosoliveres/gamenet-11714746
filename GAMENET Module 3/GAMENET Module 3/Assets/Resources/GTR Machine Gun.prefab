@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3377909141676647969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6663939597222401737}
+  m_Layer: 0
+  m_Name: GunPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6663939597222401737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377909141676647969}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.01999998, y: 0.682, z: 0.443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 343349119667155038}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &4877651820347691909
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,9 +372,11 @@ GameObject:
   - component: {fileID: 5013569599597174871}
   - component: {fileID: 7623789238500897964}
   - component: {fileID: -5523279258442569169}
+  - component: {fileID: -954589162621041487}
+  - component: {fileID: 4328895688899453767}
   m_Layer: 0
   m_Name: GTR Machine Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,8 +526,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.9720979, y: 2.4023867, z: 7.5359735}
+  m_Center: {x: -0.17016865, y: -0.052051783, z: -0.3934311}
 --- !u!114 &-5523279258442569169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +544,37 @@ MonoBehaviour:
   CurrentHealth: 0
   HealthBar: {fileID: 2696002027643868899}
   IsDead: 0
+--- !u!114 &-954589162621041487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877651820347691917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b443350d2eaea47999eee53e80faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitName: 
+--- !u!114 &4328895688899453767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877651820347691917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2781de027e65d43ad5941740c28642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanShoot: 0
+  Camera: {fileID: 0}
+  Health: {fileID: -5523279258442569169}
+  GunPoint: {fileID: 6663939597222401737}
+  initiator: {fileID: -954589162621041487}
+  ProjectilePrefab: {fileID: 4219889165621207826, guid: 676e4cb8c0b0b6749b260c4b4a831e61, type: 3}
 --- !u!1 &4877651820347691919
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,15 +756,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d148bd46a5a4c4e4d96a7c02442100fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d148bd46a5a4c4e4d96a7c02442100fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.045
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d148bd46a5a4c4e4d96a7c02442100fc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.545
+      value: 3.27
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d148bd46a5a4c4e4d96a7c02442100fc, type: 3}
       propertyPath: m_LocalRotation.w

@@ -3,34 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class LaserShooting : MonoBehaviourPunCallbacks
+public class LaserShooting : Shooting
 {
-    public Camera Camera;
-    public Health Health;
-    public Transform GunPoint;
-    private float damage = 20f;
     private LineRenderer lineRenderer;
-    private bool isDead = false;
+    [SerializeField] private GameObject laserPrefab;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-        Health = this.GetComponent<Health>();
+        base.Start();
         lineRenderer = this.GetComponent<LineRenderer>();
         lineRenderer.startWidth = 0.2f;
         lineRenderer.endWidth = 0.2f;
+        damage = 20f;
     }
 
-    private void LateUpdate()
+    protected override void Update()
     {
-        if(Input.GetKey(KeyCode.Space) && photonView.IsMine)
+        base.Update();
+        if (Input.GetKeyDown(KeyCode.Space) && photonView.IsMine)
         {
             Fire();
         }
     }
 
-    public void Fire()
+    protected override void Fire()
     {
+        lineRenderer.enabled = true;
         lineRenderer.SetPosition(0, GunPoint.position);
         RaycastHit hit;
 
@@ -38,54 +37,29 @@ public class LaserShooting : MonoBehaviourPunCallbacks
 
         if(Physics.Raycast(ray, out hit, 200))
         {
-            if (hit.collider)
-            {
-                Debug.Log(hit.collider.gameObject.name);
-                lineRenderer.SetPosition(1, hit.point);
-            }
-            else lineRenderer.SetPosition(1, transform.forward * 5000);
+            Debug.Log(hit.collider.gameObject.name);
+            lineRenderer.SetPosition(1, hit.point);
 
             if (hit.collider.CompareTag("Player") && !hit.collider.gameObject.GetComponent<PhotonView>().IsMine)
             {
                 // Victim calls the take damage fn
-                //hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, damage);    // all current and future players get rpc call
+                hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, damage);    // all current and future players get rpc call
                 Attack(hit.collider.gameObject, initiator);
             }
+            StartCoroutine(WaitForDisableLineRenderer());
         }
     }
 
-    private void Attack(GameObject target, Unit initiator)
+    private IEnumerator WaitForDisableLineRenderer()
     {
-        Debug.Log("Initiator = " + initiator.unitName);
-        target.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, damage);
-        if (target.GetComponent<LaserShooting>().isDead)
-        {
-            photonView.RPC("OnKill", RpcTarget.AllBuffered, initiator.unitName, target.GetComponent<Unit>().unitName);
-        }
-        target.GetComponent<LaserShooting>().isDead = false;
-    }
+        float waitTime = 1f;
 
-    [PunRPC]
-    public void TakeDamage(float damage, PhotonMessageInfo info)
-    {
-        this.Health.CurrentHealth -= damage;
-        this.Health.SetHealthBarFillAmount();
-
-        if (this.Health.CurrentHealth <= 0)
+        while(waitTime > 0)
         {
-            Die();
-            //OnKill(info.Sender.NickName, info.photonView.Owner.NickName, killer);
-            isDead = true;
-            Debug.Log(info.Sender.NickName + " killed " + info.photonView.Owner.NickName);
+            yield return new WaitForSeconds(1f);
+            waitTime--;
         }
-    }
 
-    public void Die()
-    {
-        if (photonView.IsMine)
-        {
-            //StartCoroutine(RespawnCountdown());
-            Destroy(this.gameObject);
-        }
+        lineRenderer.enabled = false;
     }
 }

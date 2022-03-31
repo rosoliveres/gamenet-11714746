@@ -343,10 +343,11 @@ GameObject:
   - component: {fileID: 4633493642204839389}
   - component: {fileID: -5700169159283232352}
   - component: {fileID: -8640355575914102567}
+  - component: {fileID: -4507896834047311800}
   - component: {fileID: 790355493960265826}
   m_Layer: 0
   m_Name: Black Muscle Laser Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,8 +497,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.7324665, y: 1.7117946, z: 5.2853613}
+  m_Center: {x: 0.13962102, y: 0.06547904, z: -0.26001537}
 --- !u!114 &-5700169159283232352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,9 +527,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1f665b34f50474c90c87df9100214a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanShoot: 0
   Camera: {fileID: 2777768701641267161}
-  Health: {fileID: 0}
+  Health: {fileID: -5700169159283232352}
   GunPoint: {fileID: 2085740134981081073}
+  initiator: {fileID: -4507896834047311800}
+  laserPrefab: {fileID: 4219889165621207826, guid: 676e4cb8c0b0b6749b260c4b4a831e61, type: 3}
+--- !u!114 &-4507896834047311800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3443446459692802973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b443350d2eaea47999eee53e80faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitName: 
 --- !u!120 &790355493960265826
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -745,12 +762,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5233011809446070730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b7a84f9a07ab47a14bcc4f86394bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Turn: {x: 0, y: 0}
+  IsControlEnabled: 0
 --- !u!1 &5287041222385871541
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,15 +869,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.111
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.744
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.307
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalRotation.w

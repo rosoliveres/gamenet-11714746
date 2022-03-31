@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5407638579041874968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 1.63, z: -4.686}
+  m_LocalPosition: {x: -0.06, y: 2.19, z: -4.686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7822344859533685415}
@@ -120,12 +120,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7729190307671039085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b7a84f9a07ab47a14bcc4f86394bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Turn: {x: 0, y: 0}
+  IsControlEnabled: 0
 --- !u!1 &7822344859533717121
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,10 +389,11 @@ GameObject:
   - component: {fileID: 3158976868781433655}
   - component: {fileID: -600916740666561496}
   - component: {fileID: 2013837055396155010}
+  - component: {fileID: 8214416044013354535}
   - component: {fileID: -8765283317982263058}
   m_Layer: 0
   m_Name: Plain Sports Laser Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -541,8 +543,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.8631182, y: 2.641269, z: 8.073401}
+  m_Center: {x: -0.08790017, y: 0.046161294, z: -0.47090197}
 --- !u!114 &-600916740666561496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,9 +573,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1f665b34f50474c90c87df9100214a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanShoot: 0
   Camera: {fileID: 8214890753446995029}
-  Health: {fileID: 0}
+  Health: {fileID: -600916740666561496}
   GunPoint: {fileID: 1824703845165832282}
+  initiator: {fileID: 8214416044013354535}
+  laserPrefab: {fileID: 4219889165621207826, guid: 676e4cb8c0b0b6749b260c4b4a831e61, type: 3}
+--- !u!114 &8214416044013354535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822344859533717127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b443350d2eaea47999eee53e80faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitName: 
 --- !u!120 &-8765283317982263058
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -979,11 +997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.106
+      value: -0.289
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.952
+      value: 3.499
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalRotation.w

@@ -90,12 +90,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3925938281183839913}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b7a84f9a07ab47a14bcc4f86394bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Turn: {x: 0, y: 0}
+  IsControlEnabled: 0
 --- !u!1 &4533930123935515045
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,10 +389,11 @@ GameObject:
   - component: {fileID: 1071596551592863733}
   - component: {fileID: 3724810957302847791}
   - component: {fileID: -6844351395682455767}
+  - component: {fileID: -3453633304299019142}
   - component: {fileID: -2400131133278302331}
   m_Layer: 0
   m_Name: Yellow Muscle Laser Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -541,8 +543,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.9720979, y: 2.6992788, z: 8.025181}
+  m_Center: {x: -0.17016867, y: 1.014446, z: -0.72062594}
 --- !u!114 &3724810957302847791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,9 +573,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1f665b34f50474c90c87df9100214a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanShoot: 0
   Camera: {fileID: 2809819745712122950}
-  Health: {fileID: 0}
+  Health: {fileID: 3724810957302847791}
   GunPoint: {fileID: 4984373611847866837}
+  initiator: {fileID: -3453633304299019142}
+  laserPrefab: {fileID: 4219889165621207826, guid: 676e4cb8c0b0b6749b260c4b4a831e61, type: 3}
+--- !u!114 &-3453633304299019142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751523802688702331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b443350d2eaea47999eee53e80faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitName: 
 --- !u!120 &-2400131133278302331
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -851,15 +869,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.081
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.17
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalRotation.w

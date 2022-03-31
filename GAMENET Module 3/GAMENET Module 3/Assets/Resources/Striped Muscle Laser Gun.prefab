@@ -343,10 +343,11 @@ GameObject:
   - component: {fileID: 2396807815263052685}
   - component: {fileID: -4313670666462266142}
   - component: {fileID: -1992290296837580698}
+  - component: {fileID: -3200640385469824561}
   - component: {fileID: 2943193714174986430}
   m_Layer: 0
   m_Name: Striped Muscle Laser Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,8 +497,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.963231, y: 1.8305917, z: 5.916501}
+  m_Center: {x: -0.042752743, y: 0.07603097, z: -0.2591046}
 --- !u!114 &-4313670666462266142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,9 +527,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1f665b34f50474c90c87df9100214a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanShoot: 0
   Camera: {fileID: 6527813190762343010}
-  Health: {fileID: 0}
+  Health: {fileID: -4313670666462266142}
   GunPoint: {fileID: 7836220685805937993}
+  initiator: {fileID: -3200640385469824561}
+  laserPrefab: {fileID: 4219889165621207826, guid: 676e4cb8c0b0b6749b260c4b4a831e61, type: 3}
+--- !u!114 &-3200640385469824561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716494754021029085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b443350d2eaea47999eee53e80faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitName: 
 --- !u!120 &2943193714174986430
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -828,12 +845,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8906619108686907569}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b7a84f9a07ab47a14bcc4f86394bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Turn: {x: 0, y: 0}
+  IsControlEnabled: 0
 --- !u!1001 &8456795786278330169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -975,15 +993,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.819
+      value: -0.203
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.439
+      value: 2.278
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9d25894dedbc3a547b268d9a0e54e5b3, type: 3}
       propertyPath: m_LocalRotation.w

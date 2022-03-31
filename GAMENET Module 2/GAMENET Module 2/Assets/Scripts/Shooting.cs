@@ -28,9 +28,7 @@ public class Shooting : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        Health = this.GetComponent<Health>();
         animator = this.GetComponent<Animator>();
-        initiator = this.GetComponent<Unit>();
     }
 
     public void Fire()

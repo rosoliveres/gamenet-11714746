@@ -56,6 +56,11 @@ public class CountdownManager : MonoBehaviourPunCallbacks
     public void StartRace()
     {
         GetComponent<VehicleMovement>().IsControlEnabled = true;
+        if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("dr"))
+        {
+            //GetComponentInChildren<TurretControl>().IsControlEnabled = true;
+            GetComponent<Shooting>().CanShoot = true;
+        }
         this.enabled = false;
     }
 }

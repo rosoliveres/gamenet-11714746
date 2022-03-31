@@ -120,12 +120,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5529777532920533232}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b7a84f9a07ab47a14bcc4f86394bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Turn: {x: 0, y: 0}
+  IsControlEnabled: 0
 --- !u!1 &8745310068605781877
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,10 +551,11 @@ GameObject:
   - component: {fileID: 8092758156343484179}
   - component: {fileID: -3559383228470790562}
   - component: {fileID: -6272899459373726478}
+  - component: {fileID: -2057627806065288830}
   - component: {fileID: 3634765087194878569}
   m_Layer: 0
   m_Name: Red Sports Laser Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,8 +705,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.9720979, y: 2.6011558, z: 7.2786345}
+  m_Center: {x: -0.17016865, y: 0.1843751, z: -0.52210075}
 --- !u!114 &-3559383228470790562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,9 +735,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1f665b34f50474c90c87df9100214a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanShoot: 0
   Camera: {fileID: 1065411465961587457}
-  Health: {fileID: 0}
+  Health: {fileID: -3559383228470790562}
   GunPoint: {fileID: 6590691855219251492}
+  initiator: {fileID: -2057627806065288830}
+  laserPrefab: {fileID: 4219889165621207826, guid: 676e4cb8c0b0b6749b260c4b4a831e61, type: 3}
+--- !u!114 &-2057627806065288830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745310068605781887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b443350d2eaea47999eee53e80faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitName: 
 --- !u!120 &3634765087194878569
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -855,11 +873,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: c9b4f0b4197c0624e8dfcc44e866fe9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.987
+      value: -0.503
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: c9b4f0b4197c0624e8dfcc44e866fe9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.995
+      value: 2.945
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: c9b4f0b4197c0624e8dfcc44e866fe9b, type: 3}
       propertyPath: m_LocalRotation.w
